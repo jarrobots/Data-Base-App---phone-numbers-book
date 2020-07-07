@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="AplikacjaBD.Desktop">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="5" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="3818a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="imie"/>
+        </properties>
+      </component>
+      <component id="305ca" class="javax.swing.JTextField" binding="nazwisko">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="c4b08" class="javax.swing.JTextField" binding="imie">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="54c71" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="nazwisko"/>
+        </properties>
+      </component>
+      <component id="6de24" class="javax.swing.JTextField" binding="numerTelefonu">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="a9ef5" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="nr telefonu"/>
+        </properties>
+      </component>
+      <component id="56ae2" class="javax.swing.JButton" binding="OKButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="3" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="OK"/>
+        </properties>
+      </component>
+      <component id="9d4c" class="javax.swing.JRadioButton" binding="dodajRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="49" height="26"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="dodaj"/>
+        </properties>
+      </component>
+      <component id="8e3d" class="javax.swing.JRadioButton" binding="edytujRadioButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="edytuj"/>
+        </properties>
+      </component>
+      <component id="9105d" class="javax.swing.JTextField" binding="wyszukaj">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="1d4af" class="javax.swing.JButton" binding="wyszukajButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=" wyszukaj w"/>
+        </properties>
+      </component>
+      <scrollpane id="2c89f">
+        <constraints>
+          <grid row="0" column="3" row-span="10" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="ccaa4" class="javax.swing.JTable" binding="table1" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="16e50" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="ID"/>
+        </properties>
+      </component>
+      <component id="c6f00" class="javax.swing.JSpinner" binding="id">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="8a985" class="javax.swing.JRadioButton" binding="usunRadioButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="usun"/>
+        </properties>
+      </component>
+      <component id="ec11b" class="javax.swing.JRadioButton" binding="telefonRadioButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="telefon"/>
+        </properties>
+      </component>
+      <component id="f6d5b" class="javax.swing.JRadioButton" binding="nazwiskoRadioButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="nazwisko"/>
+        </properties>
+      </component>
+      <component id="1b0d8" class="javax.swing.JRadioButton" binding="imieRadioButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="imie"/>
+        </properties>
+      </component>
+      <component id="7dcc9" class="javax.swing.JButton" binding="pokazWszystkoButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="pokaz wszystko"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
